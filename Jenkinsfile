@@ -36,7 +36,7 @@ pipeline {
         stage('Running Container') {
           steps {
             script {
-              sh "docker run -d ${registry}"
+              sh "docker run -d ${registry}" + ":$BUILD_NUMBER" 
     }
 }
         }
