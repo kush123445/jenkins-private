@@ -11,9 +11,6 @@ pipeline {
         stage('Cloning from GitHub') { 
             steps { 
                 git branch:'master', url:'https://github.com/kush123445/jenkins-private.git'
-
- kushalxenon/jenkins-demo
-
              }
         } 
         stage('Building our image') { 
