@@ -10,7 +10,7 @@ pipeline {
     stages { 
         stage('Cloning from GitHub') { 
             steps { 
-                git branch:'master', url:'https://github.com/kush123445/jenkins-private.git'
+                git branch:'main', url:'https://github.com/kush123445/jenkins-private.git'
              }
         } 
         stage('Building our image') { 
